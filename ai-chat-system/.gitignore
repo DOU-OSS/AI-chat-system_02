@@ -1,0 +1,161 @@
+# ========== Backend (Spring Boot) ==========
+backend/target/
+backend/*.iml
+backend/.idea/
+backend/*.iws
+backend/*.ipr
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# Eclipse
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/bin/
+
+# VS Code
+backend/.vscode/
+
+# IntelliJ IDEA
+backend/*.iml
+backend/.idea/
+backend/out/
+
+# Compiled class files
+backend/**/*.class
+
+# Log files
+backend/*.log
+backend/logs/
+
+# Package Files
+backend/*.jar
+backend/*.war
+backend/*.nar
+backend/*.ear
+backend/*.zip
+backend/*.tar.gz
+backend/*.rar
+
+# Maven
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/pom.xml.versionsBackup
+backend/pom.xml.next
+backend/release.properties
+
+# Application uploads folder
+backend/uploads/
+**/uploads/
+**/ai-chat-system/uploads/
+
+# ========== Frontend (Vue/Vite) ==========
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.env.local
+frontend/.env.*.local
+
+# Editor directories and files
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+frontend/.idea/
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+# npm/yarn
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+frontend/package-lock.json
+frontend/yarn.lock
+
+# Testing
+frontend/coverage/
+frontend/*.lcov
+frontend/.nyc_output
+
+# Build outputs
+frontend/.nuxt/
+frontend/.next/
+frontend/.cache/
+
+# ========== General ==========
+# OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+# Logs
+logs/
+*.log
+*.pid
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (注意：打包时需要.env文件)
+.env
+.env.local
+.env.*.local
+
+# Database
+*.sqlite
+*.db
+
+# Certificates
+*.pem
+*.key
+*.crt
+*.p12
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ========== Keep these files ==========
+!.gitkeep
+!frontend/package.json
+!backend/pom.xml
+!backend/src/main/resources/application.yml
+!start-all.sh
+!start-all.bat
+!stop-all.sh
+!stop-all.bat
+!restart-all.sh
+!README.md

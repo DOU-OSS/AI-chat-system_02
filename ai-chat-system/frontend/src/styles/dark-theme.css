@@ -1,0 +1,48 @@
+/* 全局深色主题 */
+html, body {
+  background: #0a0e27 !important;
+  color: #ffffff !important;
+}
+
+/* Element Plus 组件深色主题覆盖 */
+.el-input__wrapper,
+.el-textarea__inner {
+  background-color: rgba(26, 31, 58, 0.9) !important;
+  color: #ffffff !important;
+  border-color: rgba(0, 188, 212, 0.2) !important;
+}
+
+.el-select-dropdown,
+.el-dropdown-menu {
+  background-color: rgba(26, 31, 58, 0.95) !important;
+  border-color: rgba(0, 188, 212, 0.3) !important;
+}
+
+.el-select-dropdown__item,
+.el-dropdown-menu__item {
+  color: #e0e0e0 !important;
+}
+
+.el-select-dropdown__item:hover,
+.el-dropdown-menu__item:hover {
+  background-color: rgba(0, 188, 212, 0.2) !important;
+  color: #ffffff !important;
+}
+
+/* 消息区域强制深色背景 - 已注释以支持主题切换 */
+/* .chat-messages,
+.messages-container {
+  background: rgba(15, 15, 30, 0.95) !important;
+} */
+
+/* 消息项目文字对比度 - 已注释以支持主题切换 */
+/* .message-item,
+.message-content {
+  color: #ffffff !important;
+} */
+
+/* 输入区域深色背景 - 已注释以支持主题切换 */
+/* .chat-input,
+.input-container {
+  background: rgba(26, 31, 58, 0.9) !important;
+} */

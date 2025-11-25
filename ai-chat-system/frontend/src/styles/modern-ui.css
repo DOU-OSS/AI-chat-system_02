@@ -1,0 +1,153 @@
+/* 现代化UI设计 */
+
+/* 移除模型选择器的图标 */
+.el-select-dropdown__item .model-icon {
+  display: none;
+}
+
+/* 美化输入框 - 已注释以支持主题切换 */
+/* .el-textarea__inner {
+  background: rgba(30, 35, 50, 0.8) !important;
+  border: 1px solid rgba(100, 100, 120, 0.3) !important;
+  color: #ffffff !important;
+  font-size: 15px;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  transition: all 0.3s ease;
+}
+
+.el-textarea__inner:focus {
+  border-color: rgba(0, 188, 212, 0.5) !important;
+  background: rgba(30, 35, 50, 0.95) !important;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.2) !important;
+} */
+
+/* 美化按钮 */
+.el-button--primary {
+  background: linear-gradient(135deg, #00bcd4 0%, #2196f3 100%) !important;
+  border: none !important;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.el-button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4) !important;
+}
+
+/* 美化选择器 */
+.model-selector .el-input__wrapper {
+  background: rgba(30, 35, 50, 0.8) !important;
+  border: 1px solid rgba(100, 100, 120, 0.3) !important;
+  border-radius: 8px !important;
+}
+
+.model-selector .el-input__inner {
+  color: #00bcd4 !important;
+  font-weight: 500;
+}
+
+/* 下拉菜单美化 */
+.el-select-dropdown {
+  background: rgba(30, 35, 50, 0.98) !important;
+  border: 1px solid rgba(0, 188, 212, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+.el-select-dropdown__item {
+  color: #e0e0e0 !important;
+  padding: 12px 16px !important;
+  transition: all 0.2s ease;
+}
+
+.el-select-dropdown__item:hover {
+  background: rgba(0, 188, 212, 0.15) !important;
+  color: #ffffff !important;
+}
+
+.el-select-dropdown__item.selected {
+  background: rgba(0, 188, 212, 0.25) !important;
+  color: #00bcd4 !important;
+  font-weight: 500;
+}
+
+/* 聊天头部美化 - 已注释以支持主题切换 */
+/* .chat-header {
+  background: linear-gradient(180deg, rgba(26, 31, 58, 0.95) 0%, rgba(20, 25, 45, 0.9) 100%) !important;
+  border-bottom: 1px solid rgba(0, 188, 212, 0.2) !important;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+} */
+
+/* Thinking模式复选框美化 */
+.el-checkbox__label {
+  color: #00bcd4 !important;
+  font-weight: 500;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #00bcd4 !important;
+  border-color: #00bcd4 !important;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(0, 188, 212, 0.4) 0%, rgba(33, 150, 243, 0.4) 100%);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(0, 188, 212, 0.6) 0%, rgba(33, 150, 243, 0.6) 100%);
+}
+
+/* 修复创建角色界面下拉框文字截断问题 */
+.role-model-select-dropdown {
+  min-width: 350px !important;
+  max-width: 500px !important;
+  /* 确保下拉框正确定位，不对齐偏移 */
+  margin-top: 4px !important;
+}
+
+/* 确保下拉框容器正确定位，不偏移 */
+.role-model-select-dropdown.el-popper {
+  position: absolute !important;
+}
+
+.role-model-select-dropdown .el-scrollbar__wrap {
+  overflow-x: visible !important;
+}
+
+.role-model-select-dropdown .el-select-dropdown__list {
+  overflow-x: visible !important;
+}
+
+.role-model-select-dropdown .el-select-dropdown__item {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  padding: 10px 20px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.role-model-select-dropdown .el-select-dropdown__item span {
+  display: block !important;
+  width: 100% !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+  text-overflow: clip !important;
+  max-width: none !important;
+}
