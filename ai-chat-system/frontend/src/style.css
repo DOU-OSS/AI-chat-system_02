@@ -13,8 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
   
   /* AI Theme Colors */
-  --primary-cyan: #00bcd4;
-  --primary-blue: #2196f3;
+  --primary-cyan: #4ff3da;
+  --primary-blue: #34d234;
   --accent-purple: #9c27b0;
   --dark-bg: #0a0e27;
   --dark-surface: rgba(26, 31, 58, 0.95);
@@ -36,7 +36,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(135deg, #0a0e27 40%, #1a1a2e 50%, #16213e 100%);
   position: relative;
 }
 
