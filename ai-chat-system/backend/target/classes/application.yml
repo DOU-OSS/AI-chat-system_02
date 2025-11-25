@@ -1,0 +1,99 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ai-chat-system
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/ai_chat_system?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    username: root
+    password: Mm0407...
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
+  
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # 24 hours
+  
+  # Mail Configuration
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+    default-encoding: UTF-8
+
+# AI Configuration (Dynamic Multi-Provider Support)
+# 支持任意AI服务接入，只需在.env中添加对应的环境变量
+# 格式：PROVIDER_API_KEY, PROVIDER_BASE_URL, PROVIDER_MODELS
+openai:
+  api-key: ${OPENAI_API_KEY:}
+  base-url: ${OPENAI_BASE_URL:https://api.openai.com/v1}
+  models: ${OPENAI_MODELS:}
+
+anthropic:
+  api-key: ${ANTHROPIC_API_KEY:}
+  base-url: ${ANTHROPIC_BASE_URL:https://api.anthropic.com/v1}
+  models: ${ANTHROPIC_MODELS:}
+
+qwen:
+  api-key: ${QWEN_API_KEY:}
+  base-url: ${QWEN_BASE_URL:https://dashscope.aliyuncs.com/api/v1}
+  models: ${QWEN_MODELS:}
+
+zhipu:
+  api-key: ${ZHIPU_API_KEY:}
+  base-url: ${ZHIPU_BASE_URL:https://open.bigmodel.cn/api/paas/v4}
+  models: ${ZHIPU_MODELS:}
+
+custom:
+  api-key: ${CUSTOM_API_KEY:}
+  base-url: ${CUSTOM_BASE_URL:}
+  models: ${CUSTOM_MODELS:}
+  provider-name: ${CUSTOM_PROVIDER_NAME:Custom Provider}
+
+# Application Configuration
+app:
+  frontend:
+    url: ${FRONTEND_URL:http://localhost:5173}
+
+# Email Configuration
+email:
+  debug-mode: ${EMAIL_DEBUG_MODE:false}
+
+# Swagger/OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.example.aichatsystem: DEBUG
+    com.example.aichatsystem.service.AIModelService: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.mail: DEBUG
